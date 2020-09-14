@@ -1,0 +1,28 @@
+.hero-container {
+    background-color: $darkgray-background;
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+    .hero-image-container {
+        margin: 2.5rem auto 1rem;
+        #my-picture {
+            border-radius: 10rem;
+            border: 0.75rem solid $lightgray;
+            height: 20rem;
+        }
+    }
+    .hero-text-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        .my-name {
+            font-size: 4rem;
+            color: $lightgray;
+        }
+        .my-section {
+            font-size: 2rem;
+            color: $gray;
+            font-weight: 700;
+        }
+    }
+}

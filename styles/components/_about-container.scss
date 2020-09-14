@@ -1,0 +1,32 @@
+.about-container {
+    margin: 2.5rem 1.5rem 0;
+    text-align: center;
+    height: 28rem;
+    color: $lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .about-header-container {
+        font-size: 3rem;
+    }
+    .about-content-container {
+        display: flex;
+        margin: 2rem 0 0 0;
+        flex: 0 0 auto;
+        #about-content {
+            color: $lightgray;
+            font-size: 2rem;
+            width: 50rem;
+            height: 20rem;
+            transition: 0.5s;
+            margin: 0 1rem;
+        }
+        .left-arrow-container, .right-arrow-container {
+            margin: 7rem 1rem;
+            & > button {
+                background: none;
+                border: none;
+            }
+        }
+    }
+}
