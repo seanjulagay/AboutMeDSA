@@ -1,0 +1,12 @@
+.socials-container {
+    display: flex;
+    justify-content: center;
+    ul {
+        li {
+            display: inline;
+        }
+    }
+    .fab {
+        color: $lightgray;
+    }
+}

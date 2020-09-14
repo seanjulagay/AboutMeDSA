@@ -15,6 +15,13 @@
             }
         }
     }
+    .about-container {
+        .about-content-container {
+            #about-content {
+                font-size: 1.5rem
+            }
+        }
+    }
 }
 
 @media all and (min-width: 1024px) {
@@ -22,7 +29,7 @@
         flex-direction: row;
     }
     .hero-container {
-        width: 40rem;
+        width: 37.5rem;
         height: 100%;
         align-items: center;
         justify-content: center;
@@ -44,12 +51,16 @@
                 }
                 .left-arrow-container, .right-arrow-container {
                     margin-top: 2rem;
-                    & > button {
-
-                    }
                 }
             }
         }
+    }
+    footer {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin-right: 1.5rem;
+        margin-bottom: 0.5rem;
     }
 }
 
