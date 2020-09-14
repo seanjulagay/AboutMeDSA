@@ -1,20 +1,11 @@
-var myPicture = document.getElementById("my-picture");
 var aboutContent = document.getElementById("about-content");
 var leftArrow = document.getElementById("left-arrow");
 var rightArrow = document.getElementById("right-arrow");
 var currentPage = 0;
 var lastPage = 6;
 
-// leftArrow.addEventListener("click", scrollLeft);
-// rightArrow.addEventListener("click", scrollRight);
-
-// myPicture.addEventListener("mouseover", function() {
-//     myPicture.src = "../images/burger moi.png";
-// })
-
-// myPicture.addEventListener("mouseleave", function() {
-//     myPicture.src = "../images/moi.png";
-// })
+leftArrow.addEventListener("click", scrollLeft);
+rightArrow.addEventListener("click", scrollRight);
 
 function scrollLeft() {
     if(currentPage === 0) {
