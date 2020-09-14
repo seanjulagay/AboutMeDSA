@@ -8,3 +8,8 @@ html, body {
     font-size: 62.5%;
     height: 100%;
 }
+
+button {
+	-webkit-tap-highlight-color: transparent; 
+	outline: none;
+}

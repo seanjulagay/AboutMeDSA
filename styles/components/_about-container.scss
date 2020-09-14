@@ -1,5 +1,5 @@
 .about-container {
-    margin: 2.5rem 1.5rem 0;
+    margin: 2.5rem 1rem 0;
     text-align: center;
     height: 28rem;
     color: $lightgray;
@@ -13,18 +13,27 @@
         flex: 0 0 auto;
         #about-content {
             color: $lightgray;
-            font-size: 2rem;
+            font-size: 1.75rem;
             width: 50rem;
             height: 20rem;
             transition: 0.5s;
-            margin: 0 1rem;
         }
         .left-arrow-container, .right-arrow-container {
-            margin: 7rem 1rem;
+            margin: 7rem 0;
             & > button {
                 background: none;
                 border: none;
+                padding: 1rem;
+                &:hover {
+                    cursor: pointer;
+                }
             }
+        }
+        .left-arrow-container {
+            margin-right: 1rem;
+        }
+        .right-arrow-container {
+            margin-left: 1rem;
         }
     }
 }

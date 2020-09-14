@@ -10,12 +10,17 @@ html, body {
   height: 100%;
 }
 
+button {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
 * {
   font-family: "Open Sans", sans-serif;
 }
 
 .about-container {
-  margin: 2.5rem 1.5rem 0;
+  margin: 2.5rem 1rem 0;
   text-align: center;
   height: 28rem;
   color: #B6B6B6FF;
@@ -40,21 +45,33 @@ html, body {
 
 .about-container .about-content-container #about-content {
   color: #B6B6B6FF;
-  font-size: 2rem;
+  font-size: 1.75rem;
   width: 50rem;
   height: 20rem;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  margin: 0 1rem;
 }
 
 .about-container .about-content-container .left-arrow-container, .about-container .about-content-container .right-arrow-container {
-  margin: 7rem 1rem;
+  margin: 7rem 0;
 }
 
 .about-container .about-content-container .left-arrow-container > button, .about-container .about-content-container .right-arrow-container > button {
   background: none;
   border: none;
+  padding: 1rem;
+}
+
+.about-container .about-content-container .left-arrow-container > button:hover, .about-container .about-content-container .right-arrow-container > button:hover {
+  cursor: pointer;
+}
+
+.about-container .about-content-container .left-arrow-container {
+  margin-right: 1rem;
+}
+
+.about-container .about-content-container .right-arrow-container {
+  margin-left: 1rem;
 }
 
 .hero-container {
@@ -101,6 +118,10 @@ html, body {
   font-weight: 700;
 }
 
+main {
+  margin: auto 0;
+}
+
 body {
   background-color: #E7E7E7FF;
   display: -webkit-box;
@@ -110,6 +131,21 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media all and (max-width: 370px) {
+  .hero-container {
+    height: 28rem;
+  }
+  .hero-container .hero-image-container #my-picture {
+    height: 15rem;
+  }
+  .hero-container .hero-text-container .my-name {
+    font-size: 2.5rem;
+  }
+  .hero-container .hero-text-container .my-section {
+    font-size: 1.5rem;
+  }
 }
 
 @media all and (min-width: 1024px) {
@@ -141,13 +177,30 @@ body {
         -ms-flex-align: center;
             align-items: center;
   }
+  main .about-container {
+    position: relative;
+    top: 5rem;
+  }
   main .about-container .about-content-container #about-content {
     margin-top: 1rem;
     margin-left: 2rem;
     margin-right: 2rem;
+    font-size: 2rem;
   }
   main .about-container .about-content-container .left-arrow-container, main .about-container .about-content-container .right-arrow-container {
-    margin-top: 4rem;
+    margin-top: 2rem;
+  }
+}
+
+@media all and (min-width: 1440px) {
+  body, html {
+    font-size: 80%;
+  }
+}
+
+@media all and (min-width: 2550px) {
+  body, html {
+    font-size: 120%;
   }
 }
 /*# sourceMappingURL=main.css.map */
