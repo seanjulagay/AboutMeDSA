@@ -5,16 +5,16 @@ var rightArrow = document.getElementById("right-arrow");
 var currentPage = 0;
 var lastPage = 6;
 
-leftArrow.addEventListener("click", scrollLeft);
-rightArrow.addEventListener("click", scrollRight);
+// leftArrow.addEventListener("click", scrollLeft);
+// rightArrow.addEventListener("click", scrollRight);
 
-myPicture.addEventListener("mouseover", function() {
-    myPicture.src = "../images/burger moi.png";
-})
+// myPicture.addEventListener("mouseover", function() {
+//     myPicture.src = "../images/burger moi.png";
+// })
 
-myPicture.addEventListener("mouseleave", function() {
-    myPicture.src = "../images/moi.png";
-})
+// myPicture.addEventListener("mouseleave", function() {
+//     myPicture.src = "../images/moi.png";
+// })
 
 function scrollLeft() {
     if(currentPage === 0) {
