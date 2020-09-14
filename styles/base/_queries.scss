@@ -1,0 +1,29 @@
+@media all and (min-width: 1024px) {
+    body {
+        flex-direction: row;
+    }
+    .hero-container {
+        width: 40rem;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    main {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .about-container {
+            .about-content-container {
+                #about-content {
+                    margin-top: 1rem;
+                    margin-left: 2rem;
+                    margin-right: 2rem;
+                }
+                .left-arrow-container, .right-arrow-container {
+                    margin-top: 4rem;
+                }
+            }
+        }
+    }
+}
