@@ -19,6 +19,10 @@ button {
   font-family: "Open Sans", sans-serif;
 }
 
+a {
+  color: #2F2B2BFF;
+}
+
 .about-container {
   margin: 2.5rem 1rem 0;
   text-align: center;

@@ -14,7 +14,6 @@
         <div class="hero-container">
             <div class="hero-image-container">
                 <div class="hero-image-circle">
-                    <!-- <img src="images/moi.png" alt="" id="my-picture"> -->
                     <div id="my-picture"></div>
                 </div>
             </div>
@@ -31,7 +30,7 @@
             </div>
             <div class="about-content-container">
                 <div class="left-arrow-container"><button id="left-arrow"><img src="images/icon-prev.svg" alt="" class="left-arrow-img"></button></div>
-                <div id="about-content">Hello, I'm Sean! I made this little webpage to tell you more about myself! Here's 5 random facts about me.</div>
+                <div id="about-content"><p v-html="text">Hello, I'm Sean! I made this little webpage to tell you more about myself! Here's 5 random facts about me.</p></div>
                 <div class="right-arrow-container"><button id="right-arrow"><img src="images/icon-next.svg" alt="" id="right-arrow"></button></div>
             </div>
         </div>

@@ -3,11 +3,13 @@ var aboutContent = document.getElementById("about-content");
 var leftArrow = document.getElementById("left-arrow");
 var rightArrow = document.getElementById("right-arrow");
 var currentPage = 0;
-var lastPage = 6;
+var lastPage = images.length - 1;
 var loadImage = new Array(lastPage);
 var i = 0;
 
-while(i < lastPage) {
+console.log("What are you doing here :O");
+
+while(i <= lastPage) {
     loadImage[i] = new Image();
     loadImage[i].src = images[i];
     i++;
@@ -47,7 +49,7 @@ function fadeOut() {
 }
 
 function changeContent() {
-    aboutContent.textContent = aboutMe[currentPage]
+    aboutContent.innerHTML = aboutMe[currentPage];
 }
 
 function fadeIn() {
