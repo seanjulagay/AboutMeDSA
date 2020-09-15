@@ -191,7 +191,7 @@ footer {
   }
 }
 
-@media all and (min-width: 1024px) and (min-height: 720px) and (orientation: landscape) {
+@media all and (min-width: 1024px) and (orientation: landscape) {
   body {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;

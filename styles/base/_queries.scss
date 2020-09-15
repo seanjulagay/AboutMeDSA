@@ -25,7 +25,7 @@
     }
 }
 
-@media all and (min-width: 1024px) and (min-height: 720px) and (orientation: landscape) { // desktop threshold
+@media all and (min-width: 1024px) and (orientation: landscape) { // desktop threshold
     body {
         flex-direction: row;
     }
