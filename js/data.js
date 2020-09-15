@@ -8,11 +8,4 @@ aboutMe = [
     "That's all! Thank you for viewing my page! I look forward to learning a lot from this class, and I hope that everyone of us gets high grades! See you in the online classroom! :)"
 ]
 
-images = [
-    "https://github.com/seanniekins/AboutMeDSA/blob/master/images/me-irl.jpg?raw=true", 
-    "https://github.com/seanniekins/AboutMeDSA/blob/master/images/lpb.jpg?raw=true", 
-    "https://github.com/seanniekins/AboutMeDSA/blob/master/images/award.jpg?raw=true", 
-    "https://github.com/seanniekins/AboutMeDSA/blob/master/images/minecraft.jpg?raw=true", 
-    "https://github.com/seanniekins/AboutMeDSA/blob/master/images/cube.jpg?raw=true", 
-    "https://github.com/seanniekins/AboutMeDSA/blob/master/images/acads.jpg?raw=true", 
-    "https://github.com/seanniekins/AboutMeDSA/blob/master/images/burger-me.jpg?raw=true"];
+images = ["~/../images/me-irl.jpg", "~/../images/lpb.jpg", "~/../images/award.jpg", "~/../images/minecraft.jpg", "~/../images/cube.jpg", "~/../images/acads.jpg", "~/../images/burger-me.jpg"];
