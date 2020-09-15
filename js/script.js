@@ -4,6 +4,14 @@ var leftArrow = document.getElementById("left-arrow");
 var rightArrow = document.getElementById("right-arrow");
 var currentPage = 0;
 var lastPage = 6;
+var loadImage = new Array(lastPage);
+var i = 0;
+
+while(i < lastPage) {
+    loadImage[i] = new Image();
+    loadImage[i].src = images[i];
+    i++;
+}
 
 leftArrow.addEventListener("click", scrollLeft);
 rightArrow.addEventListener("click", scrollRight);

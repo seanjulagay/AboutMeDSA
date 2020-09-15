@@ -9,3 +9,6 @@ aboutMe = [
 ]
 
 images = ["~/../images/me-irl.jpg", "~/../images/lpb.jpg", "~/../images/award.jpg", "~/../images/minecraft.jpg", "~/../images/cube.jpg", "~/../images/acads.jpg", "~/../images/burger-me.jpg"];
+
+// export {aboutMe};
+// export {images};
