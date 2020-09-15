@@ -94,6 +94,11 @@ button {
   border-radius: 10rem;
   border: 0.75rem solid #B6B6B6FF;
   height: 20rem;
+  width: 20rem;
+  -webkit-transition: 1s;
+  transition: 1s;
+  background: url("../../images/me-irl.jpg");
+  background-size: cover;
 }
 
 .hero-container .hero-text-container {
@@ -133,6 +138,12 @@ button {
 
 .socials-container .fab {
   color: #B6B6B6FF;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.socials-container .fab:hover {
+  color: #2F2B2BFF;
 }
 
 main {
@@ -167,6 +178,7 @@ footer {
   }
   .hero-container .hero-image-container #my-picture {
     height: 15rem;
+    width: 15rem;
   }
   .hero-container .hero-text-container .my-name {
     font-size: 2.5rem;
@@ -179,7 +191,7 @@ footer {
   }
 }
 
-@media all and (min-width: 1024px) {
+@media all and (min-width: 1024px) and (min-height: 720px) and (orientation: landscape) {
   body {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -196,6 +208,9 @@ footer {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .hero-container .hero-image-container {
+    margin-top: -5rem;
+  }
   main {
     width: 100%;
     display: -webkit-box;
@@ -210,7 +225,10 @@ footer {
   }
   main .about-container {
     position: relative;
-    top: 5rem;
+    top: 4rem;
+  }
+  main .about-container .about-content-container {
+    margin-top: 0;
   }
   main .about-container .about-content-container #about-content {
     margin-top: 1rem;
@@ -230,15 +248,52 @@ footer {
   }
 }
 
-@media all and (min-width: 1440px) {
+@media all and (min-width: 1440px) and (orientation: landscape) {
   body, html {
     font-size: 80%;
   }
 }
 
-@media all and (min-width: 2550px) {
+@media all and (min-width: 1920px) and (orientation: landscape) {
   body, html {
-    font-size: 120%;
+    font-size: 100%;
+  }
+}
+
+@media all and (min-width: 2550px) and (orientation: landscape) {
+  body, html {
+    font-size: 140%;
+  }
+}
+
+@media all and (min-width: 3840px) and (orientation: landscape) {
+  body, html {
+    font-size: 200%;
+  }
+}
+
+@media all and (min-height: 720px) and (min-width: 540px) and (orientation: portrait) {
+  .about-container .about-content-container #about-content {
+    font-size: 2rem;
+    margin: auto 3rem;
+  }
+}
+
+@media all and (max-height: 1024px) and (min-width: 768px) and (orientation: portrait) {
+  body, html {
+    font-size: 80%;
+  }
+}
+
+@media all and (max-height: 1366px) and (min-width: 1024px) and (orientation: portrait) {
+  body, html {
+    font-size: 100%;
+  }
+  body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 /*# sourceMappingURL=main.css.map */

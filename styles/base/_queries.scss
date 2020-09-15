@@ -1,9 +1,10 @@
-@media all and (max-width: 370px) {
+@media all and (max-width: 370px) { // iphone 5/se
     .hero-container {
         height: 28rem;
         .hero-image-container {
             #my-picture {
                 height: 15rem;
+                width: 15rem;
             }
         }
         .hero-text-container {
@@ -24,7 +25,7 @@
     }
 }
 
-@media all and (min-width: 1024px) {
+@media all and (min-width: 1024px) and (min-height: 720px) and (orientation: landscape) { // desktop threshold
     body {
         flex-direction: row;
     }
@@ -33,6 +34,9 @@
         height: 100%;
         align-items: center;
         justify-content: center;
+        .hero-image-container {
+            margin-top: -5rem;
+        }
     }
     main {
         width: 100%;
@@ -41,8 +45,9 @@
         align-items: center;
         .about-container {
             position: relative;
-            top: 5rem;
+            top: 4rem;
             .about-content-container {
+                margin-top: 0;
                 #about-content {
                     margin-top: 1rem;
                     margin-left: 2rem;
@@ -64,14 +69,55 @@
     }
 }
 
-@media all and (min-width: 1440px) {
+@media all and (min-width: 1440px) and (orientation: landscape) { // 1440 x 900
     body, html {
         font-size: 80%;
     }
 }
 
-@media all and (min-width: 2550px) {
+@media all and (min-width: 1920px) and (orientation: landscape) { // 1080p
     body, html {
-        font-size: 120%;
+        font-size: 100%;
     }
 }
+
+
+@media all and (min-width: 2550px) and (orientation: landscape) { // 2k
+    body, html {
+        font-size: 140%;
+    }
+}
+
+
+@media all and (min-width: 3840px) and (orientation: landscape) { // 4k
+    body, html {
+        font-size: 200%;
+    }
+}
+
+@media all and (min-height: 720px) and (min-width: 540px) and (orientation: portrait) { // tablet threshold
+    .about-container {
+        .about-content-container {
+            #about-content {
+                font-size: 2rem;
+                margin: auto 3rem;
+            }
+        }
+    }
+}
+
+@media all and (max-height: 1024px) and (min-width: 768px) and (orientation: portrait) { // ipad
+    body, html {
+        font-size: 80%;
+    }
+}
+
+@media all and (max-height: 1366px) and (min-width: 1024px) and (orientation: portrait) {
+    body, html {
+        font-size: 100%;
+    }
+    body {
+        flex-direction: column;
+    }
+}
+

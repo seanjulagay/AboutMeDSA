@@ -9,6 +9,10 @@
             border-radius: 10rem;
             border: 0.75rem solid $lightgray;
             height: 20rem;
+            width: 20rem;
+            transition: 1s;
+            background: url("../../images/me-irl.jpg");
+            background-size: cover;
         }
     }
     .hero-text-container {

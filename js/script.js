@@ -1,3 +1,4 @@
+var myPicture = document.getElementById("my-picture");
 var aboutContent = document.getElementById("about-content");
 var leftArrow = document.getElementById("left-arrow");
 var rightArrow = document.getElementById("right-arrow");
@@ -29,10 +30,12 @@ function changePage() {
     fadeOut();
     setTimeout(changeContent, 500);
     setTimeout(fadeIn, 500);
+    myPicture.style.backgroundSize = "cover";
 }
 
 function fadeOut() {
     aboutContent.style.opacity = 0;
+    myPicture.style.background = "url(" + images[currentPage] + ")";
 }
 
 function changeContent() {
